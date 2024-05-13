@@ -47,6 +47,7 @@ jobs:
           echo "Current time has been saved to $filename"
       - name: Test UTs
         run: |
+          bundle install
           bundle exec rake test:unit
       - name: Upload Duration
         run: |
